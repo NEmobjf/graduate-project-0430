@@ -18,8 +18,7 @@ ll.css">
 
     <section id="header">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="logoimage" src="./images/logo1.png" alt=""></a>
+            <div class="container-fluid" <a class="navbar-brand" href="#"><img class="logoimage" src="./images/logo1.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -41,25 +40,23 @@ ll.css">
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex ms-auto" role="search">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                    <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
-                    <p class="icon"><i class="fa-solid fa-user"></i></p>
+                    <div class="wrap">
+                        <div class="search">
+                            <input class="search-bar" type="text" name="search" id="search" placeholder="輸入名稱">
+                            <button class="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="row text-center">
+                            <p class="icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                            <p class="icon"><i class="fa-solid fa-user"></i></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </nav>
     </section>
-
-
-
-
-
+    <!-- 輪播 -->
     <section id="content">
         <div class="container-fluid">
             <div class="row">
-                <!-- 輪播 -->
                 <div class="col-md-12">
                     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -100,22 +97,81 @@ ll.css">
                         </button>
                     </div>
                 </div>
-                <!-- card -->
-                <hr>
-                <div><h1>文字測試</h1></div>
+            </div>
+    </section>
+    <!-- </div> -->
+    <hr>
+    <!-- 類別欄 -->
+
+    <div class=" category">
+        <div class="container row">
+            <div class="col-md-3"><img class="img-fluid rounded-circle" src="./images/1.png" alt=""></div>
+            <div class="col-md-3"><img class="img-fluid rounded-circle" src="./images/2.png" alt=""></div>
+            <div class="col-md-3"><img class="img-fluid rounded-circle" src="./images/3.png" alt=""></div>
+            <div class="col-md-3"><img class="img-fluid rounded-circle" src="./images/4.png" alt=""></div>
+        </div>
+    </div>
 
 
 
 
 
+    <hr>
+
+    <section id="scontaint">
+        <!-- 商品欄 -->
+        <p>
+        <div class="row">
+            <!-- card1 -->
+            <div class="card col-md-3" style="width: 18rem;">
+                <img src="./images/figma/4c273ae9-928c-49b4-9d41-4488262ff53d.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <!-- card2 -->
+            <div class="card col-md-3" style="width: 18rem;">
+                <img src="./images/figma/4ff01fa3-a8e2-41fb-aab1-380db172d638.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <!-- card13 -->
+            <div class="card col-md-3" style="width: 18rem;">
+                <img src="./images/figma/5c2c1407-79d2-4459-a33d-b16202e64d31.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <!-- card4 -->
+            <div class="card col-md-3" style="width: 18rem;">
+                <img src="./images/figma/5fab2856-d8d0-4b95-bfbe-6b5688e9ba37.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        </p>
+
+
+        <!-- 推薦用戶 -->
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <hr>
-    <section id="scontent">
-        文字測試
 
-    </section>
     <section id="footer">
         <div class="container-fluid">
             <div id="aboutme" class="row text-center">
